@@ -3,7 +3,15 @@
 
 int main()
 {
-	printf("The first message to print is:\n");
-	printf("Hello World\n");
+	uint8_t numberOfTimes = 0;
+
+	printf("Enter the number of times to print: ");
+	scanf("%hhu",&numberOfTimes);
+
+	for (; numberOfTimes > 0; numberOfTimes--)
+	{
+		printf("Hello World\n");
+	}
+
 	return 0;
 }
